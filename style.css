@@ -1,0 +1,22 @@
+body {
+    margin-top: 10px; 
+    margin-left: 12px;
+    background-color: black;
+    color: lime;
+}
+
+.title_text { 
+    padding-bottom: 1px;
+}
+
+.all_points {
+    padding-left: 20pt; 
+    margin-top: 8px;
+}
+a {
+    margin-right: 15px;
+}
+
+center {
+    margin-top: 200px;
+}
