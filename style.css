@@ -16,3 +16,9 @@ body {
 a {
     margin-right: 15px;
 }
+
+footer {
+    position:fixed;
+    left: 42%;
+    bottom: 5%;
+}
