@@ -5,6 +5,15 @@ body {
     color: lime;
 }
 
+.background_image {
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
 .title_text { 
     padding-bottom: 1px;
 }
