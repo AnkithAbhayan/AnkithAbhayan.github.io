@@ -2,18 +2,19 @@ body {
     margin-top: 5%; 
     margin-left: 13%;
     margin-right: 13%;
-    background-color: black;
-    //background-image: linear-gradient(120deg,
-    //    rgb(229, 255, 0) 0%,
-    //    rgb(0, 183, 255) 100% 
-    //);
+    background-color: black; 
+    /*background-image: linear-gradient(120deg,
+        rgb(229, 255, 0) 0%,
+        rgb(0, 183, 255) 100% 
+    ); */
     color:lime;
+    /* color: black; */
 }
 
 .outer_circle {
     background-image: linear-gradient(
         to right, rgb(255, 0, 150) 0%,
-                  rgb(251, 255, 0) 100%
+                rgb(251, 255, 0) 100%
     );
     content: '';
     position: relative;
