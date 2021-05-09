@@ -2,13 +2,13 @@ body {
     margin-top: 5%; 
     margin-left: 13%;
     margin-right: 13%;
-    background-color: black; 
-    /*background-image: linear-gradient(120deg,
+    /*background-color: black;*/ 
+    background-image: linear-gradient(120deg,
         rgb(229, 255, 0) 0%,
         rgb(0, 183, 255) 100% 
-    ); */
+    );
     color:lime;
-    /* color: black; */
+    color: black; 
 }
 
 .outer_circle {
