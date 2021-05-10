@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Fira Code';
+    font-weight: auto;
+    src: url('fonts/FiraCode-Regular.ttf');
+}
+
 body {
-    margin-top: 5%; 
+    margin-top: 12vh;
     margin-left: 13%;
     margin-right: 13%;
     background-image: linear-gradient(120deg,
@@ -22,17 +28,23 @@ body {
     );
     content: '';
     position: relative;
-    width: 295px;
-    height: 295px;
+    width: 45vh;
+    height: 45vh;
     border-radius: 50%;
-    margin-bottom: 3%;
+    margin-bottom: 10vh;
 }
 
 .profile_picture {
-    margin-top: 10px;
+    margin-top: 2vh;
     object-fit: cover;
+    width: 41vh;
+    height: 41vh;
     border-radius:50%;
-    margin-bottom: 3%;
+}
+
+.my_name {
+    font-size: 8vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .background_image {
@@ -45,8 +57,14 @@ body {
 }
 
 .all_points {
-    margin-top: 10%;
+    font-family: 'Fira Code';
+    font-size: 3rem;
+    margin-top: 23vh;
     padding-bottom: 7%;
+}
+
+.about_text {
+    font-size: 2rem;
 }
 
 .point_break {
