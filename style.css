@@ -22,7 +22,7 @@ body {
 .outer_circle {
     background-image: linear-gradient(
         to right, rgb(255, 0, 150) 0%,
-                rgb(251, 255, 0) 100%
+                  rgb(251, 255, 0) 100%
     );
     content: '';
     position: relative;
@@ -47,35 +47,33 @@ body {
 
 .all_points {
     font-family:Fira Code;
-    font-size: 3vh;
+    font-size: 3vmin;
     margin-left: 15vw;
     margin-right: 15vw;
     margin-top: 23vh;
 }
 
 .about_text {
-    font-size: 2rem;
+    font-size: 4vh;
 }
 
 .point_break {
     margin-top: 0px;
-    margin-bottom: 4%;
+    margin-bottom: 9vh;
     padding-bottom: 0px;
 }
 
-/*p {
-    margin-top: 0px;
-    margin-bottom: 1%;
-    padding-bottom: 0px;
-}*/
-
 a {
-    padding-right: 15px;
+    padding-right: 2vw;
+}
+
+p {
+    margin-bottom: 9px;
 }
 
 footer {
-    margin-top: 5%;
-    margin-bottom: 2%;
+    margin-top: 0px;
+    margin-bottom: 2vh;
     position: relative;
 }
 
@@ -83,4 +81,63 @@ hr {
     background-color:rgb(0, 0, 0);
     height: 1px;
     border:none;
+}
+
+.bottom_line {
+    background-color:rgb(0, 0, 0);
+    height: 1px;
+    border:none;
+    margin-bottom: 4vh;
+}
+
+img {
+    width: 7vh;
+    height: 7vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .all_points {
+        font-size: 2vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .about_text {
+        font-size: 3vh;
+    }
+    .point_break {
+        margin-bottom: 8vh;
+    }
+    a {
+        padding-right: 5vw;
+    }
+    .bottom_line {
+        margin-bottom: 4vh;
+    }
+    footer {
+        margin-bottom: 2vh;
+    }
+    p {
+        margin-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin-top: 18vh;
+    }
+    .outer_circle {
+        width: 38vh;
+        height: 38vh;
+    }
+    .profile_picture {
+        margin-top: 2vh;
+        width: 34vh;
+        height: 34vh;
+    }
+    .my_name {
+        font-size: 6vh;
+    }
+    .all_points {
+        margin-top: 28vh;
+    }
 }
