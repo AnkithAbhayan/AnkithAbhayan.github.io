@@ -5,6 +5,8 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
     <HEAD>
     <BODY>
+        <button class="colour_change_button" onclick="change_gradient()">Change Background</button>
+        <button class="mode_change_button" onclick="mode_change()">Set Dark Mode</button>
         <center> 
         <div class="outer_circle">
             <img class="profile_picture" src="images/avatar.jpg" alt="Profile Picture"></img>
@@ -16,7 +18,7 @@
             <center class="about_text">About</center>
             <hr>
             <p>Hello! I'm Ankith [I go by Ankith101.rar or soul crusher 2005 on the internet], a 15 y/o highly interested in programming and computer science.</p>
-            <p class="point_break">Python is my favourite programming language. Object-Oriented-Programming is cool. Web development is interesting too. Click here<br>Check out my GitHub account linked below to see what I'm working on.</p>
+            <p class="point_break">Python is my favourite programming language. Object-Oriented-Programming is cool. Web development is interesting too. <br>Check out my GitHub account linked below to see what I'm working on.</p>
             <p>I've been sifting through many many text editors and IDEs trying to find the most suitable one for me. Right now, Vscode serves my needs just fine; micro for quick edits to single files (the fact that it runs in the terminal is legit awesome!) Speaking about terminals, Cygwin ftw.<br>My favourite themes are Gruvbox and Atom one dark. Favourite font? Fira Code ftw.</p>
             <p class="point_break">I've tried Vim and emacs, they have very weird default keybinds (its not like I can't configure it), the learning curve is too steep and I'm not usually a keyboard person, so it isn't the right one for me.</p>
             <p>Rise, fellow wannabe-Linux-users.</p>
@@ -36,5 +38,39 @@
                 <img src="logos/Discord_black.png" alt="Discord logo" title="Ankith101.rar#8735"></img>
             </a>
         </footer></center>
+        <script type="text/javascript"> 
+            function change_gradient() {
+                var array = [
+                    'linear-gradient(120deg, rgb(229, 255, 0) 0%, rgb(0, 183, 255) 100%)',
+                    'linear-gradient(120deg, rgb(0, 255, 255) 0%, rgb(247, 0, 255) 100%)',
+                    'linear-gradient(120deg, rgb(255, 145, 0) 0%, rgb(0, 255, 106) 100%)'      
+                ];
+                var index = array.indexOf(document.body.style.backgroundImage);
+                if (index+1 == array.length) {
+                    index = 0;
+                } else if (index == -1){
+                    index = 1;
+                } else {
+                    index += 1;
+                }
+                var newbackground = array[index]
+                document.body.style.backgroundImage = newbackground;
+                document.body.style.color = "black";
+                for (i=0; i!=document.body.getElementsByTagName('hr').length; i++) {
+                    document.body.getElementsByTagName('hr')[i].setAttribute('style', 'background-color:rgb(25, 25, 25)');
+                };
+
+            };
+    
+            function mode_change() {
+                document.body.style.backgroundImage = 'linear-gradient(120deg, rgb(20, 20, 20) 0%, rgb(20, 20, 20) 100%)';
+                document.body.style.color = 'rgb(225, 225, 225)';
+                for (i=0; i!=document.body.getElementsByTagName('hr').length; i++) {
+                    document.body.getElementsByTagName('hr')[i].setAttribute('style', 'background-color:rgb(255, 255, 255)');
+                };
+                document.body.getElementsByClassName('mode_change_button').innerHTMl = "Set Light Mode";
+                console.log(document.body.getElementsByClassName('mode_change_button').innerHTMl);
+            }
+        </script>
     </BODY>
 </HTML>
