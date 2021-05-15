@@ -58,6 +58,15 @@
                 document.body.style.color = "black";
                 for (i=0; i!=document.body.getElementsByTagName('hr').length; i++) {
                     document.body.getElementsByTagName('hr')[i].setAttribute('style', 'background-color:rgb(25, 25, 25)');
+                };                
+                for (i=0; i!=document.body.getElementsByTagName('img').length; i++) {
+                    if (document.body.getElementsByTagName('img')[i].alt == "GitHub logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/GitHub_black.png";
+                    } else if (document.body.getElementsByTagName('img')[i].alt == "Reddit logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/Reddit_black.png";
+                    } else if (document.body.getElementsByTagName('img')[i].alt == "Discord logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/Discord_black.png";
+                    }
                 };
 
             };
