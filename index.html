@@ -19,7 +19,7 @@
             <hr>
             <p>Hello! I'm Ankith [I go by Ankith101.rar or soul crusher 2005 on the internet], a 15 y/o highly interested in programming and computer science.</p>
             <p class="point_break">Python is my favourite programming language. Object-Oriented-Programming is cool. Web development is interesting too. <br>Check out my GitHub account linked below to see what I'm working on.</p>
-            <p>I've been sifting through many many text editors and IDEs trying to find the most suitable one for me. Right now, Vscode serves my needs just fine; micro for quick edits to single files (the fact that it runs in the terminal is legit awesome!) Speaking about terminals, Cygwin ftw.<br>My favourite themes are Gruvbox and Atom one dark. Favourite font? Fira Code ftw.</p>
+            <p>I've been sifting through many many text editors and IDEs trying to find the most suitable one for me. Right now, Vscode serves my needs just fine; micro for quick edits to single files (the fact that it runs in the terminal is just fantastic!) Speaking about terminals, Cygwin ftw.<br>My favourite themes are Gruvbox and Atom one dark. Favourite font? Fira Code ftw.</p>
             <p class="point_break">I've tried Vim and emacs, they have very weird default keybinds (its not like I can't configure it), the learning curve is too steep and I'm not usually a keyboard person, so it isn't the right one for me.</p>
             <p>Rise, fellow wannabe-Linux-users.</p>
             <p class="point_break">Nope, not employed yet, although.. I do like contributing to open source projects. Free and Open-source software is cool. Mad respect to Richard Stallman and the GNU project.</p>
@@ -68,8 +68,21 @@
                 for (i=0; i!=document.body.getElementsByTagName('hr').length; i++) {
                     document.body.getElementsByTagName('hr')[i].setAttribute('style', 'background-color:rgb(255, 255, 255)');
                 };
-                document.body.getElementsByClassName('mode_change_button').innerHTMl = "Set Light Mode";
-                console.log(document.body.getElementsByClassName('mode_change_button').innerHTMl);
+                /*document.body.getElementsByClassName('mode_change_button').innerHTMl = "Set Light Mode";
+                console.log(document.body.getElementsByClassName('mode_change_button').innerHTMl);*/
+                for (i=0; i!=document.body.getElementsByTagName('img').length; i++) {
+                    if (document.body.getElementsByTagName('img')[i].alt == "GitHub logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/GitHub_green.png";
+                    } else if (document.body.getElementsByTagName('img')[i].alt == "Reddit logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/Reddit_green.png";
+                    } else if (document.body.getElementsByTagName('img')[i].alt == "Discord logo") {
+                        document.body.getElementsByTagName('img')[i].src = "logos/Discord_green.png";
+                    }
+                };
+                document.body.style.color = "lime";
+                for (i=0; i!=document.body.getElementsByTagName('hr').length; i++) {
+                    document.body.getElementsByTagName('hr')[i].setAttribute('style', 'background-color:rgb(0, 200, 0)');
+                };
             }
         </script>
     </BODY>
