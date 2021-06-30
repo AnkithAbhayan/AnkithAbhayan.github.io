@@ -16,16 +16,20 @@ body {
 }
 
 .colour_change_button {
+    font-family: Fira Code;
+    font-size: 2vh;
     position: absolute;
     top: 1vh;
     right: 1vh;
     /*border-color: (
         rgb(0, 255, 255), 
         rgb(247, 0, 255)
-    );*/
-}
-
+        );*/
+    }
+    
 .mode_change_button {
+    font-family: Fira Code;
+    font-size: 2.5vh;
     position: absolute;
     top: 5vh;
     right: 1vh;
@@ -69,6 +73,12 @@ body {
     font-size: 4vh;
 }
 
+.tech_logos {
+    height: 3vmin;
+    width: 3vmin;
+    margin-left: 0.5vw;
+}
+
 .point_break {
     margin-top: 0px;
     margin-bottom: 9vh;
@@ -79,10 +89,6 @@ body {
     margin-top: 0px;
     margin-bottom: 5vh;
     padding-bottom: 0px;
-}
-
-a {
-    padding-right: 2vw;
 }
 
 p {
@@ -108,9 +114,10 @@ hr {
     margin-bottom: 4vh;
 }
 
-img {
-    width: 7vh;
-    height: 7vh;
+.social_logos {
+    width: 4vw;
+    height: 4vw;
+    padding-right: 2vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,8 +132,10 @@ img {
     .point_break {
         margin-bottom: 8vh;
     }
-    a {
+    .social_logos {
         padding-right: 5vw;
+        width: 8vw;
+        height: 8vw;
     }
     .bottom_line {
         margin-bottom: 4vh;

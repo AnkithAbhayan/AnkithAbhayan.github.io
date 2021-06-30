@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Fira Code;
+    font-weight: auto;
+    src: url('fonts/FiraCode-Regular.ttf');
+}  
+body {
+    font-family: Fira Code;
+    background-image: linear-gradient(120deg,
+        rgb(229, 255, 0) 0%,
+        rgb(0, 183, 255) 100% 
+    );
+    color: black;
+    margin-top: 0vh;
+    /*background-color: black;*/ 
+    /*color:lime;*/
+}
+
+.breadcrumb {
+    font-size: 2vh;
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+.colour_change_button {
+    font-size: 2vh;
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    /*border-color: (
+        rgb(0, 255, 255), 
+        rgb(247, 0, 255)
+        );*/
+    }
+    
+.mode_change_button {
+    font-size: 2.5vh;
+    position: absolute;
+    top: 5vh;
+    right: 1vh;
+}
+
+.social_logos {
+    width: 4vw;
+    height: 4vw;
+    padding-right: 2vw;
+}
+
+.bottom_footer {
+    margin-top: 0px;
+    margin-bottom: 2vh;
+}
+    
+.blog_intro {
+    font-size: 4vh;
+    margin-bottom: 30vh;
+}
+
+.blog_intro_points {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.above_line_text {
+    font-size: 4vh;
+    margin-bottom: 0vh;
+}
+
+.all_points {
+    font-size: 3vmin;
+    margin-top: 25vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.blog_list {
+    margin-top: 38vh;
+    margin-bottom: 38vh;
+}
+
+hr {
+    background-color:rgb(25, 25, 25);
+    height: 1px;
+    border: none;
+}
+
+.main {
+    font-size: 6vh;
+    margin-top: 4.5vh;
+    margin-bottom: 4.5vh;
+    margin-left: 2vw;
+    position: absolute;
+    display: inline-block;
+
+}
+.outer_circle {
+    background-image: linear-gradient(
+        to right, rgb(255, 0, 150) 0%,
+                rgb(251, 255, 0) 100%
+    );
+    content: '';
+    position: relative;
+    width: 13vh;
+    height: 13vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    border-radius: 50%;
+    display: inline-block;
+}
+.profile_picture {
+    object-fit: cover;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    width: 11vh;
+    height: 11vh;
+    border-radius:50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        font-size: 4vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        
+    }
+    .above_line_text {
+        font-size: 3.5vmin;
+    }
+    .colour_change_button {
+        font-size: 1.5vh;
+    }
+    .mode_change_button {
+        font-size: 2vh;
+        top: 4vh;
+    }
+    .blog_intro {
+        font-size: 4vmin;
+        margin-bottom: 40vh;
+    }
+    .all_points {
+        font-size: 2vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .outer_circle {
+        width: 8vh;
+        height: 8vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .profile_picture {
+        margin-left: 0.5vh;
+        margin-top: 0.5vh;
+        width: 7vh;
+        height: 7vh;
+    }
+    .social_logos {
+        padding-right: 5vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    footer {
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main {
+        font-size: 3vh;
+    }
+    .breadcrumb {
+        font-size: 3vw;
+    }
+    .above_line_text {
+        font-size: 4vmin;
+    }
+    .all_points {
+        margin-top: 28vh;
+    }
+    .colour_change_button {
+        width: 15vw;
+        font-size: 2vmin;
+    }
+    .mode_change_button {
+        width: 15vw;
+        font-size: 2vmin;
+        top: 5vh;
+    }
+}
+

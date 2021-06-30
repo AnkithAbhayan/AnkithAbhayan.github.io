@@ -1,46 +1,46 @@
 <HTML>
     <HEAD>
         <TITLE> Ankith's webpage </TITLE> 
-        <link rel="stylesheet" href="style.css">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="style.css">
     <HEAD>
     <BODY>
-        <button class="colour_change_button" onclick="change_gradient()">Change Background</button>
-        <button class="mode_change_button" onclick="mode_change()">Set Dark Mode</button>
-        <center> 
         <div class="outer_circle">
-            <img class="profile_picture" src="images/avatar.jpg" alt="Profile Picture"></img>
+            <img class="profile_picture" src="../images/avatar.jpg" alt="Profile Picture"></img>
             <!--<img class="profile_picture" src="https://avatars.githubusercontent.com/u/69845955?s=1000&u=951b493e8ee307699ed1e06ee438b3dc45e07e17&v=4" alt="Profile Picture"></img>-->
         </div>
-        <div class="my_name">Ankith Abhayan</div>
-        </center>
+        <p class="main">Ankith Abhayan</p>
+        <button class="colour_change_button" onclick="change_gradient()">Change Background</button><br>
+        <button class="mode_change_button" onclick="mode_change()">Set Dark Mode</button>
+        <hr>
+        <p class="breadcrumb"><a href="../index.html">Home</a> -> Blog</p>
         <div class="all_points">
-            <center class="about_text">About</center>
-            <hr>
-            <p>Hello! I'm Ankith, a 15 y/o highly interested in programming and computer science.</p>
-            <p class="point_break">Python is my favourite programming language. Object-Oriented-Programming is cool. Web development is interesting too. <br>Check out my GitHub account linked below to see what I'm working on.</p>
-            <p class="point_break">I've been sifting through many text editors and IDEs trying to find the most suitable one for me. Right now, Vscode serves my needs just fine. I really like the simplicity of Sublime text. Micro caught my attention because it's one of the few text editors that runs in the terminal. Speaking about terminals, Cygwin is the one I use.</p>
-            <p class="point_break_small">My favourite themes are Gruvbox and Atom one dark. My favourite font is Fira Code (The same font used for everything in this webpage).<br>The version control system I use is git.</p>
-            <p class="point_break_small">Free and Open-source software is cool. I really respect the work done by the contributors of the the GNU project.</p>
-            <p class="point_break_small">Member of PythonDiscord; A Discord server comprised of more than 200k python enthusiasts.</p>
-            <p><a href="blog/index.html">Click here</a> to check out my blogs.</p>
-            <p>This webpage was built using brilliant technologies like HTML5<img class="tech_logos" src="logos/html.svg">, CSS3<img class="tech_logos"  src="logos/css.svg"> and JavaScript<img class="tech_logos" src="logos/js.svg">.</p>
-            <hr class="bottom_line">
+            <div class="blog_intro"> 
+                <p class="blog_intro_points">Yeah I started writing blogs. Check 'em out, all of them are linked below.</p>
+                <p class="blog_intro_points">In the future, When the number of blogs increase, I'll hack together a solution to display the list in a better way.</p>
+                <p class="blog_intro_points">For now it's going to stay like so.</p>
+            </div>
+            <center>
+                <p class="above_line_text">Blogs</p>
+                <hr>
+                <div class="blog_list">
+                    Nothing Here.
+                </div>
+                <hr>
+            </center>
         </div>
-        </center>
-
         <center>
-        <footer>
+        <div class="bottom_footer">
             <a href="https://github.com/AnkithAbhayan">
-                <img class="social_logos" src="logos/GitHub_black.png" alt="GitHub logo" title="github.com/AnkithAbhayan"></img>
+                <img class="social_logos" src="../logos/GitHub_black.png" alt="GitHub logo" title="github.com/AnkithAbhayan"></img>
             </a>
             <a href="https://www.reddit.com/user/soulcrusher2005">
-                <img class="social_logos" src="logos/Reddit_black.png" alt="Reddit logo" title="u/soulcrusher2005"></img>
+                <img class="social_logos"  src="../logos/Reddit_black.png" alt="Reddit logo" title="u/soulcrusher2005"></img>
             </a>
             <a href="https://discord.com/users/785425328033103872">
-                <img class="social_logos" src="logos/Discord_black.png" alt="Discord logo" title="Ankith101.rar#8735"></img>
+                <img class="social_logos"  src="../logos/Discord_black.png" alt="Discord logo" title="Ankith101.rar#8735"></img>
             </a>
-        </footer>
+        </div>
         </center>
         <script type="text/javascript"> 
             function change_gradient() {
@@ -65,11 +65,11 @@
                 };                
                 for (i=0; i!=document.body.getElementsByTagName('img').length; i++) {
                     if (document.body.getElementsByTagName('img')[i].alt == "GitHub logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/GitHub_black.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/GitHub_black.png";
                     } else if (document.body.getElementsByTagName('img')[i].alt == "Reddit logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/Reddit_black.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/Reddit_black.png";
                     } else if (document.body.getElementsByTagName('img')[i].alt == "Discord logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/Discord_black.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/Discord_black.png";
                     }
                 };
 
@@ -85,11 +85,11 @@
                 console.log(document.body.getElementsByClassName('mode_change_button').innerHTMl);*/
                 for (i=0; i!=document.body.getElementsByTagName('img').length; i++) {
                     if (document.body.getElementsByTagName('img')[i].alt == "GitHub logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/GitHub_green.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/GitHub_green.png";
                     } else if (document.body.getElementsByTagName('img')[i].alt == "Reddit logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/Reddit_green.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/Reddit_green.png";
                     } else if (document.body.getElementsByTagName('img')[i].alt == "Discord logo") {
-                        document.body.getElementsByTagName('img')[i].src = "logos/Discord_green.png";
+                        document.body.getElementsByTagName('img')[i].src = "../logos/Discord_green.png";
                     }
                 };
                 document.body.style.color = "lime";
