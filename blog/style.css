@@ -1,7 +1,7 @@
 @font-face {
     font-family: Fira Code;
     font-weight: auto;
-    src: url('fonts/FiraCode-Regular.ttf');
+    src: url('../fonts/FiraCode-Regular.ttf');
 }  
 body {
     font-family: Fira Code;
