@@ -50,32 +50,21 @@ body {
     margin-top: 0px;
     margin-bottom: 2vh;
 }
-    
-.blog_intro {
-    font-size: 4vh;
-    margin-bottom: 30vh;
-}
-
-.blog_intro_points {
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh;
-}
 
 .above_line_text {
     font-size: 4vh;
     margin-bottom: 0vh;
 }
 
-.all_points {
-    font-size: 3vmin;
-    margin-top: 25vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
+.date {
+    font-size: 2vh;
 }
 
-.blog_list {
-    margin-top: 2vh;
-    margin-bottom: 70vh;
+.all_points {
+    font-size: 2.5vmin;
+    margin-top: 25vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 hr {
@@ -117,7 +106,7 @@ hr {
     border-radius:50%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .main {
         font-size: 4vh;
         margin-top: 3vh;
@@ -127,6 +116,9 @@ hr {
     .above_line_text {
         font-size: 3.5vmin;
     }
+    .date {
+        font-size: 1.75vmin;
+    }
     .colour_change_button {
         font-size: 1.5vh;
     }
@@ -134,11 +126,8 @@ hr {
         font-size: 2vh;
         top: 4vh;
     }
-    .blog_intro {
-        font-size: 4vmin;
-        margin-bottom: 40vh;
-    }
     .all_points {
+        margin-top: 20vh;
         font-size: 2vh;
         margin-left: 5vw;
         margin-right: 5vw;
@@ -169,14 +158,18 @@ hr {
     .main {
         font-size: 3vh;
     }
+    .all_points {
+        margin-top: 15vh;
+        font-size: 2.5vw;
+    }
     .breadcrumb {
         font-size: 3vw;
     }
     .above_line_text {
         font-size: 4vmin;
     }
-    .all_points {
-        margin-top: 28vh;
+    .date {
+        font-size: 2vmin;
     }
     .colour_change_button {
         width: 15vw;
