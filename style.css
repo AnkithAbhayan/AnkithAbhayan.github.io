@@ -178,7 +178,7 @@ hr {
     .outer_circle {
         width: 28vh;
         height: 28vh;
-        margin-bottom: 11vh;
+        margin-bottom: 9vh;
     }
     .profile_picture {
         margin-top: 1.5vh;
@@ -189,7 +189,7 @@ hr {
         font-size: 4vh;
     }
     .all_points {
-        margin-top: 39vh;
+        margin-top: 41vh;
     }
     .colour_change_button {
         font-size: 1.3vh;
