@@ -173,7 +173,7 @@ hr {
 
 @media only screen and (max-width: 430px) {
     body {
-        margin-top: 25vh;
+        margin-top: 21vh;
     }
     .outer_circle {
         width: 28vh;
@@ -189,7 +189,7 @@ hr {
         font-size: 4vh;
     }
     .all_points {
-        margin-top: 35vh;
+        margin-top: 38vh;
     }
     .colour_change_button {
         font-size: 1.3vh;
