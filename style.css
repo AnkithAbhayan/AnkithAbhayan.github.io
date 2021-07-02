@@ -11,12 +11,12 @@ body {
         rgb(0, 183, 255) 100% 
     );
     color: black;
+    font-family: Fira Code;
     /*background-color: black;*/ 
     /*color:lime;*/
 }
 
 .colour_change_button {
-    font-family: Fira Code;
     font-size: 2vh;
     position: absolute;
     top: 1vh;
@@ -28,7 +28,6 @@ body {
     }
     
 .mode_change_button {
-    font-family: Fira Code;
     font-size: 2.5vh;
     position: absolute;
     top: 5vh;
@@ -62,7 +61,6 @@ body {
 }
 
 .all_points {
-    font-family:Fira Code;
     font-size: 3vmin;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -81,13 +79,13 @@ body {
 
 .point_break {
     margin-top: 0px;
-    margin-bottom: 9vh;
+    margin-bottom: 10vh;
     padding-bottom: 0px;
 }
 
 .point_break_small {
     margin-top: 0px;
-    margin-bottom: 5vh;
+    margin-bottom: 6vh;
     padding-bottom: 0px;
 }
 
@@ -130,7 +128,10 @@ hr {
         font-size: 3vh;
     }
     .point_break {
-        margin-bottom: 8vh;
+        margin-bottom: 9vw;
+    }
+    .point_break_small {
+        margin-bottom: 5vw;
     }
     .social_logos {
         padding-right: 5vw;
@@ -166,5 +167,35 @@ hr {
     }
     .all_points {
         margin-top: 28vh;
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        margin-top: 25vh;
+    }
+    .outer_circle {
+        width: 28vh;
+        height: 28vh;
+        margin-bottom: 11vh;
+    }
+    .profile_picture {
+        margin-top: 1.5vh;
+        width: 25vh;
+        height: 25vh;
+    }
+    .my_name {
+        font-size: 4vh;
+    }
+    .all_points {
+        margin-top: 35vh;
+    }
+    .colour_change_button {
+        font-size: 1.3vh;
+    }
+    .mode_change_button {
+        top: 4vh;
+        font-size: 1.8vh;
     }
 }
