@@ -27,7 +27,7 @@ body {
 
 .colour_change_button {
     font-size: 2vh;
-    position: absolute;
+    position: fixed;
     top: 1vh;
     right: 1vh;
     /*border-color: (
@@ -38,7 +38,7 @@ body {
     
 .mode_change_button {
     font-size: 2.5vh;
-    position: absolute;
+    position: fixed;
     top: 5vh;
     right: 1vh;
 }
@@ -73,7 +73,7 @@ body {
     font-size: 3vmin;
     margin-left: 15vw;
     margin-right: 15vw;
-    margin-top: 25vh;
+    margin-top: 16vh;
 }
 
 .about_text {
