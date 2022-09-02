@@ -142,7 +142,7 @@ hr {
         height: 8vw;
     }
     .my_name {
-        font-size: 6vh;
+        font-size: 5vh;
     }
     .bottom_line {
         margin-bottom: 4vh;
@@ -168,9 +168,6 @@ hr {
         width: 34vh;
         height: 34vh;
     }
-    .my_name {
-        font-size: 6vh;
-    }
     .all_points {
         margin-top: 28vh;
         font-size: 3vw;
@@ -190,9 +187,6 @@ hr {
         margin-top: 1.5vh;
         width: 25vh;
         height: 25vh;
-    }
-    .my_name {
-        font-size: 6vh;
     }
     .all_points {
         margin-top: 41vh;
