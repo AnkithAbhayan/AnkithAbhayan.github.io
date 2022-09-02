@@ -19,6 +19,11 @@ body {
     /*color:lime;*/
 }
 
+.scroll_down {
+    font-size: 1vw;
+    margin-top: 10vh;
+
+}
 .colour_change_button {
     font-size: 2vh;
     position: absolute;
