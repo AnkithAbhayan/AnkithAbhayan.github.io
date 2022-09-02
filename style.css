@@ -22,8 +22,9 @@ body {
 .scroll_down {
     font-size: 1vw;
     margin-top: 10vh;
-
+    position: relative;
 }
+
 .colour_change_button {
     font-size: 2vh;
     position: absolute;
@@ -127,6 +128,9 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
+    .scroll_down {
+        font-size: 2vw;
+    }
     .all_points {
         font-size: 2vh;
         margin-left: 5vw;
