@@ -129,7 +129,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
     .scroll_down {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     .all_points {
         font-size: 2vh;
@@ -168,6 +168,9 @@ hr {
     body {
         margin-top: 18vh;
     }
+    .scroll_down {
+        font-size: 1.5vw;
+    }
     .outer_circle {
         width: 38vh;
         height: 38vh;
@@ -186,6 +189,9 @@ hr {
 @media only screen and (max-width: 430px) {
     body {
         margin-top: 20vh;
+    }
+    .scroll_down {
+        font-size: 2vw;
     }
     .outer_circle {
         width: 28vh;
