@@ -141,6 +141,9 @@ hr {
         width: 8vw;
         height: 8vw;
     }
+    .my_name {
+        font-size: 6vh;
+    }
     .bottom_line {
         margin-bottom: 4vh;
     }
