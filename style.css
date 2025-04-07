@@ -36,7 +36,7 @@ body {
     display:flex;
     align-items: center;
     float: right;
-    margin-right: 20px;
+    margin-right: 1vw;
 }
 
 .header-item1, .header-item2, .header-item3 {
@@ -330,11 +330,11 @@ li {
 
 @media (max-width: 800px) {
     #pfp {
-    top: 30vh;
-    left: 12vw;
-    width: 30vw;
-    height: 30vw;
-    border: 2px solid black;
+        top: 30vh;
+        left: 12vw;
+        width: 30vw;
+        height: 30vw;
+        border: 2px solid black;
     }
 
     #mainname {
@@ -427,5 +427,36 @@ li {
     }
     .header-name{
         font-size: 2vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .project_heading {
+        font-size: 3.5vw;
+    }
+    .subpoints {
+        font-size: 3.5vw;
+    }
+    .subsubheadings {
+        font-size: 5vw;
+    }
+    li {
+        font-size: 3.5vw;
+        margin: 2vw 0vw;
+    }
+    ul {
+        margin-top: 2vh;
+    }
+}
+
+@media (max-width: 395px) {
+    .subpoints {
+        font-size: 3.8vw;
+    }
+    .project_heading {
+        margin: 1vh 0vw;
+    }
+    .project_description {
+        font-size: 2vw;
     }
 }
