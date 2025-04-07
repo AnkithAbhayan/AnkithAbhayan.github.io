@@ -241,6 +241,7 @@ li {
 
 .project_gif {
     height: 38vh;
+    border-radius: 2vh;
     position: relative;
     top: 1vh;
     left: 1vw;
