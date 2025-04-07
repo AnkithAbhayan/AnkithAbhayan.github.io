@@ -277,3 +277,35 @@ li {
     align-items: center;
     margin: 0;
 }
+
+.connect_box {
+    width: 65vw;
+    margin: 5vh 7vw 5vh;
+    border-radius: 15vh;
+}
+
+.connect_box:hover {
+    margin: 5vh 7vw 5vh 10vw;
+}
+
+.pfp {
+    height: 28vh;
+    top: 1vh;
+    left: 0.5vw;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.social_heading {
+    font-size: 7vh;
+    font-weight: bold;
+    margin: 0vw 3vw;
+    color: white;
+}
+
+.social_handle {
+    font-size: 2.5vh;
+    margin-left: 4vw;
+    color: rgba(200,200,200,1);
+}
