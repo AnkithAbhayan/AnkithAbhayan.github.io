@@ -166,6 +166,15 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+  parse_block_html: true
+  html_to_native: true
+  auto_ids: true
+  hard_wrap: false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  entity_output: as_char
+  toc_levels: 1..6
+  input: GFM
+
 collections:
   tabs:
     output: true
