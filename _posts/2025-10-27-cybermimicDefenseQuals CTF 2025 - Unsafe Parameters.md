@@ -202,5 +202,5 @@ print(flag)
 ```
 
 # References
-1. http://ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf
+1. ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf
 2. https://di-mgt.com.au/rsa_factorize_n.html 
