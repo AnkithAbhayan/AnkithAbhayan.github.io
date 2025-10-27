@@ -4,7 +4,7 @@ date: 2025-08-08 00:00:00 +0530
 categories: [CryptoCTF 2025]
 tags: [ecdsa]
 math: true
-excerpt: Goliver_II is an innovative elliptic curve cryptosystem designed to present unique challenges for the new era of cryptographic security. 
+excerpt_separator: <!--more-->
 ---
   
 > **Goliver_II** is an innovative elliptic curve cryptosystem designed to present unique challenges for the new era of cryptographic security.  
