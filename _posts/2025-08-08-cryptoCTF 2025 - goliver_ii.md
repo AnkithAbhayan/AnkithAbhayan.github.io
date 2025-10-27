@@ -7,7 +7,9 @@ math: true
 ---
   
 > **Goliver_II** is an innovative elliptic curve cryptosystem designed to present unique challenges for the new era of cryptographic security.  
-  
+
+<!--more-->
+
 ## goliver_ii.py
 ```python
 #!/usr/bin/env python3

@@ -7,6 +7,7 @@ math: true
 ---
 
 > Is having more n really safer? I have a bad feeling  
+<!--more-->
 
 ## task.py
 ```python
