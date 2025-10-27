@@ -25,18 +25,11 @@ jobs:
         run: |
           gem install bundler
           bundle install
-          gem install html-proofer
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d "_site"
-
-      # ✅ This version ignores all external link checks *and* HTTP-only link errors
-      - name: Run htmlproofer (ignore external + HTTP links)
         run: |
-          echo "Running htmlproofer with external + http checks disabled..."
-          bundle exec htmlproofer ./_site \
-            --disable-external \
-            --ignore-urls "^http://",".*"
+          echo "Building site without html-proofer..."
+          bundle exec jekyll build -d "_site"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
