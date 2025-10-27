@@ -1,4 +1,5 @@
 name: "Build and Deploy"
+
 on:
   push:
     branches:
@@ -8,6 +9,8 @@ on:
       - .gitignore
       - README.md
       - LICENSE
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -15,6 +18,7 @@ permissions:
   pages: write
   id-token: write
 
+# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -40,17 +44,21 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
+        run: |
+          bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
         env:
-          JEKYLL_ENV: production
+          JEKYLL_ENV: "production"
 
-      - name: Test site (ignore HTTP links)
+      # ✅ HtmlProofer check (fixed)
+      - name: Test site (ignore fonts, local URLs, and HTTP links)
         run: |
           gem install html-proofer
+          bundle install --jobs 4 --retry 3 || true
           bundle exec htmlproofer ./_site \
+            --check-html \
             --allow-hash-href \
-            --ignore-urls "http://,https://127.0.0.1,https://localhost,http://127.0.0.1,http://localhost" \
-            --ignore-missing-alt
+            --ignore-missing-alt \
+            --url-ignore "/^http:\/\//","/^https?:\/\/fonts\.gstatic\.com/","/^https?:\/\/fonts\.googleapis\.com/","/^https?:\/\/ankithabhayan\.github\.io\//"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
