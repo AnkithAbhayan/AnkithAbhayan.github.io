@@ -1,4 +1,10 @@
-# Unsafe Parameters - Crypto.
+---
+title: Cyber Mimic Defense Quals CTF - Unsafe Parameters
+date: 2025-10-27 21:30:00 +0530
+categories: [CybermimicdefenseQuals 2025]
+tags: [RSA]
+---
+
 > Is having more n really safer? I have a bad feeling
 
 ## task.py
