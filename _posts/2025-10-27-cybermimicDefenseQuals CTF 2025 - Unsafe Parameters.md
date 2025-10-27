@@ -56,7 +56,7 @@ We are given the list of N and e values.
 The flag is encrypted with the sum of all primes for all moduli and an AES key is derived from its hash to encrypt the flag.  
   
 # Solution
-A quick google search helped me find [this paper](ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf): _'Common Private Exponent Attack on
+A quick google search helped me find [this paper](http://ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf): _'Common Private Exponent Attack on
 Multi Prime RSA'_
 
 In it, the lattice mentioned below is constructed with the N and e values.
@@ -202,5 +202,5 @@ print(flag)
 ```
 
 # References
-1. ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf
+1. http://ijeie.jalaxy.com.tw/contents/ijeie-v7-n2/ijeie-2017-v7-n2-p79-87.pdf
 2. https://di-mgt.com.au/rsa_factorize_n.html 
