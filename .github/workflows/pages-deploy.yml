@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -26,29 +27,28 @@ jobs:
           bundle install
           gem install html-proofer
 
-      - name: Build site
-        run: bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
+      - name: Build Jekyll site
+        run: bundle exec jekyll build -d "_site"
 
-      - name: Check HTML (ignore http links)
+      - name: Skip external link checks
         run: |
-          bundle exec htmlproofer ./_site \
-            --disable-external=true \
-            --ignore-urls="^http://"
+          echo "Running htmlproofer with external checks disabled..."
+          bundle exec htmlproofer ./_site --disable-external --ignore-urls "^http://"
 
-      - name: Upload site artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
