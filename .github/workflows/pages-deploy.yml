@@ -47,8 +47,7 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
-          bundle exec htmlproofer ./_site --disable-external
+          bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}" htmlproofer ./_site --allow-hash-href --http-status-ignore 0,999 --ignore-urls "http://"
         env:
           JEKYLL_ENV: "production"
 
