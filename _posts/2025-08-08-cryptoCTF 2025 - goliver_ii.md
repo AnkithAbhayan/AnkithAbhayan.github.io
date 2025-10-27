@@ -3,6 +3,7 @@ title: CryptoCTF 2025 - Goliver-II
 date: 2025-08-08 00:00:00 +0530
 categories: [CryptoCTF 2025]
 tags: [ecdsa]
+math: true
 ---
   
 > **Goliver_II** is an innovative elliptic curve cryptosystem designed to present unique challenges for the new era of cryptographic security.  
@@ -212,6 +213,7 @@ Isolating and solving for $f$ would be sufficient with more equations.
 - Connect three times, get three signatures each with -1, 0, 1 as input (total 9 signatures, 3 different secret keys).  
 - Represent these signatures as polynomials and run Gröbner basis on them.  
 - This will likely give us a univariate polynomial with just $f$.  
+  
 ```python
 ring  = PolynomialRing(Zmod(n),"f,hm,x1,x2,x3,r1,r2,r3")
 f,hm,x1,x2,x3,r1,r2,r3 = ring.gens()

@@ -1,11 +1,12 @@
 ---
-title: Cyber Mimic Defense Quals CTF - Unsafe Parameters
+title: Cyber Mimic Defense Quals 2025 CTF - Unsafe Parameters
 date: 2025-10-27 21:30:00 +0530
 categories: [CybermimicdefenseQuals 2025]
 tags: [RSA]
+math: true
 ---
 
-> Is having more n really safer? I have a bad feeling
+> Is having more n really safer? I have a bad feeling  
 
 ## task.py
 ```python
@@ -50,7 +51,7 @@ ct = b'J\x08\x0c\xfe\x0eC\n\x96!\xb3\x05\xa9\x9b\xf9\n\xe3-\xf2m\xdb&.\xb5h\xe1\
 In this challenge, we have an multi-prime RSA setup where the private exponent `d` is common across five different moduli.  
 d is a 425 bit prime number.  
 For each moduli, its corresponding public exponent e is calculated as $pow(d_i, -1, phi)$  
-where $phi$ is $(p-1)*(q-1)*(r-1)$  
+where $phi$ is $(p-1) (q-1) (r-1)$  
 We are given the list of N and e values.  
 The flag is encrypted with the sum of all primes for all moduli and an AES key is derived from its hash to encrypt the flag.  
   
@@ -62,7 +63,7 @@ In it, the lattice mentioned below is constructed with the N and e values.
 Running LLL on this lattice gives us a short vector $v_n$, where the first value is the product of d and M. 
 $M = N_n^{1-1/r}$
 Where $N_n$ is the largest N among the set and $r$ is the number of primes in the modulus.  
-![[Pasted image 20251026001309.png]]
+![lattice construct]({{ site.baseurl }}/assets/images/lattice_find_d_common_d.png)
 
 ```python
 RR_high = RealField(200
@@ -99,7 +100,7 @@ this is a 425 bit prime.
 Now, given d, the task is to factor all the $N_i$ s to and add them up to derive the AES key.  
 I used the approach mentioned in [this webpage](https://di-mgt.com.au/rsa_factorize_n.html): 
 
-![[Pasted image 20251026002750.png]]
+![factor N given d]({{ site.baseurl }}/assets/images/alg_factor_N_given_d.png)
 
 I had to modify this algorithm to account for the fact that 3 primes make up each N. 
 This involved dividing N by each recovered prime and starting the algorithm over again until we factor N completely.  
