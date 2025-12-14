@@ -186,3 +186,20 @@ article h5 {
 p, li {
   font-size: 1.05em;
 }
+
+/* Make post card titles smaller on home/archive pages */
+.card-title,
+.post-preview h1,
+.post-preview h2,
+#post-list h1,
+#post-list h2,
+.card h1,
+.card h2 {
+  font-size: 1.5rem !important;
+}
+
+.card-title a,
+.post-preview h1 a,
+.post-preview h2 a {
+  font-size: 1.5rem !important;
+}
