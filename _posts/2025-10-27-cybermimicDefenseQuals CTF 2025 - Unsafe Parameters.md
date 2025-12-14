@@ -64,7 +64,7 @@ In it, the lattice mentioned below is constructed with the N and e values.
 Running LLL on this lattice gives us a short vector $v_n$, where the first value is the product of d and M. 
 $M = N_n^{1-1/r}$
 Where $N_n$ is the largest N among the set and $r$ is the number of primes in the modulus.  
-![lattice construct]({{ site.baseurl }}/assets/images/lattice_find_d_common_d.png)
+![lattice construct]({{ site.baseurl }}/assets/images/CMDQ2025CTF_UnsafeParameters/lattice_find_d_common_d.png)
 
 ```python
 RR_high = RealField(200
@@ -101,7 +101,7 @@ this is a 425 bit prime.
 Now, given d, the task is to factor all the $N_i$ s to and add them up to derive the AES key.  
 I used the approach mentioned in [this webpage](https://di-mgt.com.au/rsa_factorize_n.html): 
 
-![factor N given d]({{ site.baseurl }}/assets/images/alg_factor_N_given_d.png)
+![factor N given d]({{ site.baseurl }}/assets/images/CMDQ2025CTF_UnsafeParameters/alg_factor_N_given_d.png)
 
 I had to modify this algorithm to account for the fact that 3 primes make up each N. 
 This involved dividing N by each recovered prime and starting the algorithm over again until we factor N completely.  
