@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-12-14-BackdoorCTF 2025 m4c&ch3353.md",
+                "file": "_posts/2025-01-26-0xL4ughCTF 2025 - DORYA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-14-BackdoorCTF 2025 m4c&ch3353"
+              "title": "2025-01-26-0xL4ughCTF 2025 - DORYA"
             }
           }
         ]
@@ -183,8 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "84d8fa26a11309d6",
+  "active": "d3df2dd451a7ae58",
   "lastOpenFiles": [
+    "_posts/2025-12-14-BackdoorCTF 2025 m4c&ch3353.md",
     "_site/about/index.html",
     "_site/about",
     "_site/archives/index.html",
@@ -195,7 +196,6 @@
     "_site/posts/cryptoCTF-2025-goliver_ii/index.html",
     "_site/posts/BackdoorCTF-2025-m4c&ch3353/index.html",
     "_site/posts/cybermimicDefenseQuals-CTF-2025-Unsafe-Parameters",
-    "_site/posts/cryptoCTF-2025-goliver_ii",
     "_site/assets/img/favicons/web-app-manifest-512x512.png",
     "_site/assets/img/favicons/web-app-manifest-192x192.png",
     "_site/assets/img/favicons/mstile-150x150.png",
@@ -208,7 +208,6 @@
     "_site/assets/img/favicons/android-chrome-192x192.png",
     "{{.md",
     "_site/{{.md",
-    "_posts/2025-12-14-BackdoorCTF 2025 m4c&ch3353.md",
     "_posts/2025-10-27-cybermimicDefenseQuals CTF 2025 - Unsafe Parameters.md"
   ]
 }
