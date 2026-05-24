@@ -1,9 +1,12 @@
 ---
 title: Cyber Mimic Defense Quals 2025 CTF - Unsafe Parameters
 date: 2025-10-27 21:30:00 +0530
-categories: [CybermimicdefenseQuals 2025]
-tags: [RSA]
-excerpt: "Is having more n really safer? I have a bad feeling"
+categories:
+  - CybermimicdefenseQuals 2025
+tags:
+  - RSA
+  - LLL
+excerpt: Is having more n really safer? I have a bad feeling
 math: true
 ---
 
